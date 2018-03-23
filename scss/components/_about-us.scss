@@ -1,0 +1,36 @@
+.about-us_s {
+    max-width: 100%;
+    width: 100%;
+    height: 638px;
+    max-height: 900px;
+    background-image: url(../img/about_us.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    @include flex(column, space-around, center, nowrap);
+    h2 {
+        @include font(48px, 900, 36px, #fff);
+    }
+    p {
+        width: 40%;
+        @include font(18px, 500, 30px, #949494);
+        text-align: center;
+    }
+    .block_btn {
+        text-align: center;
+    }
+}
+.our_team {
+    width: 70%;
+    @include flex(row, space-between, center, nowrap);
+    .people {
+        @include flex(column, space-between, center, nowrap);
+    }
+   h3 {
+       @include font(24px, 500, 36px, #fff);
+   }
+   p {
+       width: 200px;
+       padding: 0 -60px 0 -60px;
+   }
+   
+}
