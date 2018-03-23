@@ -584,6 +584,7 @@ nav {
 
 .design__s {
   background-image: url(../img/design_s.jpg);
+  background-attachment: fixed;
   background-size: 101%;
   background-repeat: no-repeat;
   max-width: 50%;
@@ -599,6 +600,7 @@ nav {
 .code__s {
   background-image: url(../img/code_sl.jpg);
   background-size: 101.9%;
+  background-attachment: fixed;
   background-repeat: no-repeat;
   max-width: 50%;
   width: 50%;
@@ -611,8 +613,7 @@ nav {
   flex-wrap: nowrap; }
 
 .map {
-  width: 1800px;
-  height: 200px; }
+  width: 100%; }
 
 .about-us_s {
   max-width: 100%;
