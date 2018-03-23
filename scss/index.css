@@ -542,7 +542,7 @@ nav {
     position: absolute;
     top: 5%;
     left: 39%;
-    animation: scroll_mouse .6s infinite linear alternate backwards; }
+    animation: scroll_mouse .5s infinite linear alternate backwards; }
 
 .code-design_s {
   position: relative;
