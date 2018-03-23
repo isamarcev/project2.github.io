@@ -1,0 +1,14 @@
+@mixin flex($row, $justify, $align, $wrap) {
+    display: flex;
+    flex-direction: $row;
+    justify-content: $justify;
+    align-items: $align;
+    flex-wrap: $wrap;
+}
+@mixin font($px, $bold, $line, $color) {
+    font-family: "ProximaNova";
+    font-size: $px;
+    font-weight: $bold;
+    line-height: $line;
+    color: $color;
+}

@@ -1,0 +1,10 @@
+@keyframes scroll_mouse {
+   from{
+       transform: translate(0);
+   }
+   to{
+    transform: translateY(20%);
+    height: 14px;
+    
+   }
+}

@@ -1,0 +1,88 @@
+.intro_s {
+    position: relative;
+    max-width: 100%;
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-image: url(../img/header_bg.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+.intro_s__desc {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+    @include flex(column, space-between, center, nowrap);
+    width: 600px;
+    height: 200px;
+    text-align: center;
+     h2 {
+         @include font(48px, 900, 36px, #000000);
+     }
+     p {
+        @include font(18px, 500, 30px, #252525);
+        padding-bottom: 40px;
+     }
+     a {
+        width: 205px;
+        height: 50px;
+     }
+}
+.block_btn {
+    @include font(18px, 400, 36px, #ffffff);
+    border-radius: 25px;
+    width: 205px;
+    padding: 8px;
+    height: 50px;
+    margin-bottom: 30px;
+    background: #49007c; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #49007c, #bc0085); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #49007c, #bc0085);
+}
+.intro_s__mouse {
+    position: relative;
+    top: 75%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 150px;
+    @include font(15px, 500, 18px, #fff);
+    .scroll_mouse {
+        width: 3px;
+        height: 10px;
+        background-color: #fff;
+        position: absolute;
+        top: 5%;
+        left: 39%;
+        animation: scroll_mouse 1s infinite linear alternate backwards;
+    }
+}
+
+// .box {
+//     width: 2px;
+//     height: 50px;
+//     background-color: #f00;
+//     transition: 2s;
+//     position: absolute;
+//     transform: translate(-50%,-50%);
+//     top: 50%;
+//     animation: bounce 1s 1s linear alternate backwards;
+//     left: 50%;
+// }
+//     &:hover {
+        
+//         background-color: black;
+//         animation: bounce 2s 1s 1 ease-in-out backwards;
+//     }
+// }
+// .box {
+//     animation-name: bounce;
+//     animation-duration: 2s;
+//     animation-delay: .5s;
+//     animation-iteration-count: 1;
+//     animation-timing-function: ease-in-out;
+//     animation-fill-mode: forwards;
+
+// }

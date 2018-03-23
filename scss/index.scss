@@ -1,0 +1,23 @@
+// RESET
+@import "libs/reset";
+
+// PARTIALS FOLDER
+@import "partials/variable";
+@import "partials/mixins";
+@import "partials/keyframes";
+
+
+// FONTS
+@import "fonts/fonts";
+// PAGES
+@import "pages/home";
+
+// COMPONENTS
+@import "components/wedo";
+@import "components/footer";
+@import "components/header";
+@import "components/intro";
+@import "components/codedesign";
+@import "components/map";
+
+
