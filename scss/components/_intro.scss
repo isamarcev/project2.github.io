@@ -26,16 +26,16 @@
         padding-bottom: 40px;
      }
      a {
-        width: 205px;
-        height: 50px;
+        width: 150px;
+        height: 40px;
      }
 }
 .block_btn {
     @include font(18px, 400, 36px, #ffffff);
     border-radius: 25px;
-    width: 205px;
-    padding: 8px;
-    height: 50px;
+    width: 150px;
+    padding: 3px;
+    height: 40px;
     margin-bottom: 30px;
     background: #49007c; /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #49007c, #bc0085); /* Chrome 10-25, Safari 5.1-6 */
@@ -44,18 +44,19 @@
 .intro_s__mouse {
     position: relative;
     top: 75%;
-    left: 50%;
-    transform: translateX(-50%);
+    left: 49%;
+    // transform: translateX(50%);
     width: 80px;
     height: 150px;
     @include font(15px, 500, 18px, #fff);
+    p { transform: translateX(-25%);}
     .scroll_mouse {
-        width: 3px;
+        width: 4px;
         height: 10px;
-        background-color: #fff;
+        background-color: #373635;
         position: absolute;
-        top: 5%;
-        left: 39%;
+        top: 4%;
+        left: 13.6%;
         animation: scroll_mouse .5s infinite linear alternate backwards;
     }
 }

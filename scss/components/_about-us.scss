@@ -8,6 +8,7 @@
     background-repeat: no-repeat;
     @include flex(column, space-around, center, nowrap);
     h2 {
+        padding-top: 30px;
         @include font(48px, 900, 36px, #fff);
     }
     p {

@@ -307,8 +307,7 @@ input[type="submit"] {
   from {
     transform: translate(0); }
   to {
-    transform: translateY(20%);
-    height: 14px; } }
+    transform: translateY(20%); } }
 
 @font-face {
   font-family: 'ProximaNova';
@@ -329,7 +328,7 @@ input[type="submit"] {
 .we-do_s {
   max-width: 100%;
   width: 100%;
-  height: 90vh;
+  height: 60vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -341,7 +340,7 @@ input[type="submit"] {
     font-weight: 900;
     line-height: 36px;
     color: #000000;
-    padding-top: 70px; }
+    padding-top: 40px; }
   .we-do_s a {
     text-align: center;
     font-family: 'ProximaNova-Regular';
@@ -385,7 +384,6 @@ input[type="submit"] {
 
 .we-do_container__small:nth-child(2n) {
   width: 50%;
-  padding: 0 7% 0 3%;
   height: 150px;
   display: flex;
   flex-direction: row;
@@ -455,15 +453,29 @@ nav {
   color: #000000; }
   nav a {
     color: #000000;
-    width: 105px;
+    width: 70px;
     height: 40px;
     text-align: center;
     padding-top: 7px;
-    border: 1px solid rgba(12, 2, 2, 0);
-    border-radius: 20px; }
-  nav a:hover {
-    border: 1px solid #2c2c2c;
-    border-radius: 20px; }
+    position: relative; }
+
+nav > a:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 0%;
+  height: 3px;
+  background: #49007c;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #49007c, #bc0085);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #49007c, #bc0085);
+  transition: .5s; }
+
+nav > a:hover::after {
+  transition: .5s;
+  width: 90%; }
 
 .intro_s {
   position: relative;
@@ -503,8 +515,8 @@ nav {
     color: #252525;
     padding-bottom: 40px; }
   .intro_s__desc a {
-    width: 205px;
-    height: 50px; }
+    width: 150px;
+    height: 40px; }
 
 .block_btn {
   font-family: "ProximaNova";
@@ -513,9 +525,9 @@ nav {
   line-height: 36px;
   color: #ffffff;
   border-radius: 25px;
-  width: 205px;
-  padding: 8px;
-  height: 50px;
+  width: 150px;
+  padding: 3px;
+  height: 40px;
   margin-bottom: 30px;
   background: #49007c;
   /* fallback for old browsers */
@@ -526,8 +538,7 @@ nav {
 .intro_s__mouse {
   position: relative;
   top: 75%;
-  left: 50%;
-  transform: translateX(-50%);
+  left: 49%;
   width: 80px;
   height: 150px;
   font-family: "ProximaNova";
@@ -535,20 +546,22 @@ nav {
   font-weight: 500;
   line-height: 18px;
   color: #fff; }
+  .intro_s__mouse p {
+    transform: translateX(-25%); }
   .intro_s__mouse .scroll_mouse {
-    width: 3px;
+    width: 4px;
     height: 10px;
-    background-color: #fff;
+    background-color: #373635;
     position: absolute;
-    top: 5%;
-    left: 39%;
+    top: 4%;
+    left: 13.6%;
     animation: scroll_mouse .5s infinite linear alternate backwards; }
 
 .code-design_s {
   position: relative;
   width: 100%;
   max-width: 100%;
-  height: 320px;
+  height: 40vh;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -590,7 +603,7 @@ nav {
   max-width: 50%;
   width: 50%;
   height: 100%;
-  padding: 90px 5% 1% 15%;
+  padding: 40px 5% 10px 15%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -605,7 +618,7 @@ nav {
   max-width: 50%;
   width: 50%;
   height: 100%;
-  padding: 90px 15% 1% 5%;
+  padding: 40px 15% 10px 5%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -629,6 +642,7 @@ nav {
   align-items: center;
   flex-wrap: nowrap; }
   .about-us_s h2 {
+    padding-top: 30px;
     font-family: "ProximaNova";
     font-size: 48px;
     font-weight: 900;
