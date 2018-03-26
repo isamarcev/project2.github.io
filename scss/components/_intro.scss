@@ -1,12 +1,12 @@
 .intro_s {
     position: relative;
-    max-width: 100%;
+    // max-width: 100%;
     width: 100%;
     height: 100vh;
     background-position: center;
     background-image: url(../img/header_bg.jpg);
     background-size: cover;
-    background-attachment: fixed;
+    // background-attachment: fixed;
     background-repeat: no-repeat;
 }
 .intro_s__desc {
@@ -60,6 +60,12 @@
         animation: scroll_mouse .5s infinite linear alternate backwards;
     }
 }
+@include res('mob'){
+    .intro_s__desc {
+        width: 300px;
+    }
+}
+    
 
 // .box {
 //     width: 2px;
